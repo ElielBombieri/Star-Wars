@@ -1,6 +1,14 @@
 async function excluirLog(id) {
     let url = `https://www.piway.com.br/unoesc/api/excluir/log/${id}/aluno/425181`
     let resposta = await fetch(url);    
+
+    let tagID = document.getElementById("Logs");
+    tagID.innerHTML = "";
+    let childs = '';
+
+    tagID.innerHTML = childs;
+
+    consultarLogs() 
 }
 
 async function consultarLogs() {
